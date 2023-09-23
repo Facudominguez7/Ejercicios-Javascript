@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <head> </head>
 <body>
-    <h1>Actividad 1</h1>
-    <br>
+  <h1>Actividad 1</h1>
+  <br />
   <script>
     document.write("Facundo");
     document.write("<br>");
     document.write("21 años");
   </script>
   <h1>Actividad 2</h1>
-    <br>
+  <br />
   <script>
     let nombre = "Pedro";
     let sueldo = 500000;
     document.write("Empleado: " + nombre + "<br>" + "Sueldo: " + sueldo);
   </script>
   <h1>Actividad 3</h1>
-  <br>
+  <br />
   <!--
     <script>
     nombre = prompt("Ingrese su nombre");
@@ -25,16 +25,16 @@
    
   </script>
   -->
-  
+
   <h1>Actividad 4</h1>
-  <br>
+  <br />
   <script>
     let valorlado = 5;
-    let perimetro = parseInt(valorlado*2);
-    document.write("El perimetro del cuadrado es: " + perimetro)
+    let perimetro = parseInt(valorlado * 2);
+    document.write("El perimetro del cuadrado es: " + perimetro);
   </script>
   <h1>Actividad Condicional 1</h1>
-  <br>
+  <br />
   <!--
       <script>
     let nota1, nota2, nota3, nota4;
@@ -68,7 +68,7 @@
     }
   </script>
   -->
-  
+
   <h1>Actividad Operador logico "o"</h1>
   <h3>Actividad 1</h3>
   <!--
@@ -86,7 +86,7 @@
   </script>
   -->
 
-  <h1>Actividad Swich </h1>
+  <h1>Actividad Swich</h1>
   <h3>Actividad 1</h3>
   <!--
      <script>
@@ -111,23 +111,84 @@
     }
   </script>
   -->
- 
+
   <h1>Actividad While</h1>
   <h3>Actividad 1</h3>
 
   <script>
     let numero = 11;
     let contador = 0;
-    while(contador <= 25){
-        numero = numero + 11;
-        document.write(numero);
-        document.write('<br>');
-        contador ++;
+    while (contador <= 25) {
+      numero = numero + 11;
+      document.write(numero);
+      document.write("<br>");
+      contador++;
     }
   </script>
-  <br>
+  <br />
   <h1>Actividad acumulador</h1>
   <h3>Actividad 1</h3>
+  <!--
+  <script>
 
+    // Inicializamos el contador de notas mayores o iguales a 7
+    let notas_altas = 0;
+
+    // Usamos un bucle for para leer 10 notas
+    for (let i = 0; i < 10; i++) {
+      // Pedimos al usuario que ingrese una nota
+      let nota = parseFloat(
+        prompt("Ingrese la nota del alumno " + (i + 1) + ": ")
+      );
+      // Verificamos si la nota es mayor o igual a 7
+      if (nota >= 7) {
+        // Si es así, incrementamos el contador de notas altas
+        notas_altas++;
+      }
+    }
+
+    // Calculamos el número de notas menores a 7
+    let notas_bajas = 10 - notas_altas;
+
+    // Mostramos el resultado por pantalla
+    alert(
+      "El número de alumnos con notas mayores o iguales a 7 es: " + notas_altas
+    );
+    alert("El número de alumnos con notas menores a 7 es: " + notas_bajas);
+  </script>
   
+-->
+
+  <h1>Actividad Estructura repetitiva Do/While</h1>
+  <h3>Actividad 1</h3>
+  <!--
+    <script>
+    let suma = 0;
+    let valor;
+
+    do {
+      valor = parseInt(prompt("Ingrese un valor (9999 para terminar): "));
+      if (valor == 9999) {
+        break;
+      }
+      suma += valor;
+    } while (true);
+
+    alert("El valor acumulado es: " + suma);
+
+    if (suma == 0) {
+      alert("El valor acumulado es cero.");
+    } else if (suma > 0) {
+      alert("El valor acumulado es mayor a cero.");
+    } else {
+      alert("El valor acumulado es menor a cero.");
+    }
+  </script>
+  -->
+
+  <h1>Actividad Estrctura repetitiva for</h1>
+  <h3>Actividad 1</h3>
+  <script>
+    
+  </script>
 </body>
