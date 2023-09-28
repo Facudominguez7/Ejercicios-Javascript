@@ -114,7 +114,7 @@
 
   <h1>Actividad While</h1>
   <h3>Actividad 1</h3>
-
+  <!--
   <script>
     let numero = 11;
     let contador = 0;
@@ -125,6 +125,8 @@
       contador++;
     }
   </script>
+-->
+
   <br />
   <h1>Actividad acumulador</h1>
   <h3>Actividad 1</h3>
@@ -188,7 +190,277 @@
 
   <h1>Actividad Estrctura repetitiva for</h1>
   <h3>Actividad 1</h3>
+  <!--
+     <script>
+   
+    var bases = [];
+    var alturas = [];
+
+    for (var i = 0; i < 3; i++) {
+      var base = prompt("Ingrese la base del triángulo " + (i + 1));
+      var altura = prompt("Ingrese la altura del triángulo " + (i + 1));
+
+      
+      bases[i] = Number(base);
+      alturas[i] = Number(altura);
+    }
+    var contador = 0;
+    for (var i = 0; i < 3; i++) {
+      var superficie = (bases[i] * alturas[i]) / 2;
+
+      document.write(
+        "El triángulo " +
+          (i + 1) +
+          " tiene una base de " +
+          bases[i] +
+          ", una altura de " +
+          alturas[i] +
+          " y una superficie de " +
+          superficie
+      );
+
+      if (superficie > 2) {
+        contador++;
+      }
+    }
+    document.write(
+      "La cantidad de triángulos con superficie mayor a 2 es: " + contador
+    );
+  </script>
+  -->
+
+  <h1>Actividad Funciones con parametros</h1>
+  <h3>Actividad 2</h3>
+  <!--
+    <script>
+    function mostrarOrdenados(num1, num2, num3) {
+      var numeros = [num1, num2, num3];
+      numeros.sort(function (a, b) {
+        return a - b;
+      });
+
+      numeros.forEach(function (numero) {
+        document.write(numero);
+      });
+    }
+
+    mostrarOrdenados(5, 2, 9); // Muestra 2, 5, 9
+    mostrarOrdenados(7, 1, 4); // Muestra 1, 4, 7
+    mostrarOrdenados(3, 6, 8); // Muestra 3, 6, 8
+  </script>
+-->
+
+  <h1>Actividad Funciones que retornan un valor</h1>
+  <h3>Actividad 1</h3>
+  <!--
+   <script>
+    function calcularPerimetro(lado) {
+      var perimetro = lado * 4;
+      return perimetro;
+    }
+
+    document.write(calcularPerimetro(5)); // Muestra 20
+    document.write(calcularPerimetro(10)); // Muestra 40
+    document.write(calcularPerimetro(15)); // Muestra 60
+  </script>
+-->
+
+  <h1>Actividad Clase Date</h1>
+  <h3>Actividad 1</h3>
+  <!--
+    <script>
+    var fecha = new Date();
+
+    var mes = fecha.getMonth();
+    var cuatrimestre;
+
+    if (mes >= 0 && mes <= 2) {
+      cuatrimestre = "primero";
+    } else if (mes >= 3 && mes <= 5) {
+      cuatrimestre = "segundo";
+    } else if (mes >= 6 && mes <= 8) {
+      cuatrimestre = "tercer";
+    } else {
+      cuatrimestre = "cuarto";
+    }
+
+    // Mostrar el cuatrimestre por consola
+    document.write(
+      "Nos encontramos en el " + cuatrimestre + " cuatrimestre del año."
+    );
+  </script>
+  -->
+
+  <h1>Actividad Clase Array</h1>
+  <h3>Actividad 1</h3>
+  <!--
+    <script>
+    var vector = [];
+
+    for (var i = 0; i < 8; i++) {
+      var valor = prompt("Ingrese un valor numérico");
+      vector.push(Number(valor));
+    }
+    var acumuladoTotal = 0;
+    var acumuladoMayor36 = 0;
+    var cantidadMayor50 = 0;
+
+    for (var i = 0; i < vector.length; i++) {
+      acumuladoTotal += vector[i];
+
+      if (vector[i] > 36) {
+        acumuladoMayor36 += vector[i];
+      }
+
+      if (vector[i] > 50) {
+        cantidadMayor50++;
+      }
+    }
+
+    document.write(
+      "El valor acumulado de todos los elementos del vector es: " +
+        acumuladoTotal
+    );
+    document.write(
+      "El valor acumulado de los elementos del vector que son mayores a 36 es: " +
+        acumuladoMayor36
+    );
+    document.write("La cantidad de valores mayores a 50 es: " + cantidadMayor50);
+  </script>
+-->
+
+  <h1>Actividad Clase Math</h1>
+  <h3>Actividad 1</h3>
+  <!--
+      <script>
+    var numero = prompt("Ingrese un número");
+
+
+    numero = Number(numero);
+
+    var potencia = Math.pow(numero, 3);
+
+    document.write(
+      "El valor de " + numero + " elevado a la tercera potencia es: " + potencia
+    );
+  </script>
+  -->
+
+  <h1>Actividad Clase String</h1>
+  <h3>Actividad 1</h3>
+  <!--
+    <script>
+    var nombres = [];
+    nombre = prompt("Ingrese un nombre");
+    while (nombre) {
+      nombres.push(nombre);
+
+
+      nombre = prompt("Ingrese otro nombre");
+    }
+
+    var cantidad = nombres.length;
+    document.write("Se ingresaron " + cantidad + " nombres.");
+  </script>
+-->
+
+  <h1>Actividad Formularios y eventos</h1>
+  <h3>Actividad 1</h3>
+  <!--
+     <form>
+    <input type="button" value="1" id="1">
+    <input type="button" value="2" id="2">
+    <input type="button" value="3" id="3">
+    <p id="mensaje"></p>
+  </form>
+  <script>
+       
+    var boton1 = document.getElementById("1");
+    var boton2 = document.getElementById("2");
+    var boton3 = document.getElementById("3");
+    var mensaje = document.getElementById("mensaje");
+
+ 
+    boton1.addEventListener("click", function() {
+      
+      mensaje.innerHTML = "Se presionó el botón 1";
+    });
+
+    boton2.addEventListener("click", function() {
+    
+      mensaje.innerHTML = "Se presionó el botón 2";
+    });
+
+    boton3.addEventListener("click", function() {
+      
+      mensaje.innerHTML = "Se presionó el botón 3";
+    });
+  </script>
+  -->
+  <h1>Actividad Form, button y text</h1>
+  <h3>Actividad 1</h3>
+  <!--
+     <form>
+    <input type="text" id="texto">
+    <input type="button" value="Mostrar" onclick="mostrarValor()">
+  </form>
+  <script>
+     function mostrarValor() {
+      var texto = document.getElementById("texto");
+      var valor = texto.value;
+      alert("El valor introducido es: " + valor);
+    }
+  </script>
+  -->
+
+  <h1>Actividad Control Password</h1>
+  <h3>Actividad 1</h3>
+  <!--
+     <form>
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password">
+    <input type="checkbox" onclick="togglePassword()"> Mostrar contraseña
+  </form>
+  <script>
+    function togglePassword() {
+      var password = document.getElementById("password");
+      var checkbox = document.getElementById("checkbox");
+      if (checkbox.checked) {
+        password.type = "text";
+      } else {
+        password.type = "password";
+      }
+
+      password.focus();
+    }
+  </script>
+  -->
+
+  <h1>Actividad Control SELECT</h1>
+  <h3>Actividad 1</h3>
+  <form>
+    <label for="pizzas">Seleccione una pizza:</label>
+    <select id="pizzas">
+      <option value="Jamón y Queso - $200">Jamón y Queso</option>
+      <option value="Mozzarella - $180">Mozzarella</option>
+      <option value="Morrones - $220">Morrones</option>
+    </select>
+    <br />
+    <label for="precio">Precio:</label>
+    <input type="text" id="precio" readonly="true" />
+  </form>
   <script>
     
+    var pizzas = document.getElementById("pizzas");
+    var precio = document.getElementById("precio");
+
+    
+    pizzas.addEventListener("change", function () {
+      
+      var valor = pizzas.value;
+
+      var array = valor.split("-");
+      precio.innerHTML = array[1];
+    });
   </script>
 </body>
