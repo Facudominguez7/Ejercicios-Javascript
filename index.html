@@ -438,7 +438,8 @@
 
   <h1>Actividad Control SELECT</h1>
   <h3>Actividad 1</h3>
-  <form>
+  <!--
+    <form>
     <label for="pizzas">Seleccione una pizza:</label>
     <select id="pizzas">
       <option value="Jamón y Queso - $200">Jamón y Queso</option>
@@ -463,4 +464,105 @@
       precio.innerHTML = array[1];
     });
   </script>
+  -->
+
+  <h1>Actividad Control CHECKBOX</h1>
+  <h3>Actividad 1</h3>
+  <!--
+   <p>Selecciona los deportes que practicas:</p>
+  <input type="checkbox" name="deportes" value="fútbol" /> Fútbol
+  <input type="checkbox" name="deportes" value="básquet" /> Básquet
+  <input type="checkbox" name="deportes" value="tenis" /> Tenis
+  <br />
+  <button onclick="mostrarDeportes()">Mostrar deportes</button>
+  <p id="resultado"></p>
+  <script>
+    function mostrarDeportes() {
+      var checkboxes = document.querySelectorAll("input[name=deportes]");
+      var deportes = "";
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          deportes += checkboxes[i].value + " ";
+        }
+      }
+      document.getElementById("resultado").innerHTML =
+        "Los deportes que practicas son: " + deportes;
+    }
+  </script>
+-->
+
+  <h1>Actividad Control RADIO</h1>
+  <h3>Actividad 1</h3>
+  <!--
+  <p>¿Eres mayor de 18 años?</p>
+  <input type="radio" name="edad" value="si" id="si" checked />
+  <label for="si">Sí</label>
+  <input type="radio" name="edad" value="no" id="no" />
+  <label for="no">No</label>
+  <br />
+  <button onclick="verificarEdad()">Verificar edad</button>
+  <script>
+    function verificarEdad() {
+      var radioSi = document.querySelector("input[name=edad][value=si]");
+      if (radioSi.checked) {
+        alert("Puedes ingresar al sitio");
+      } else {
+        alert("No puedes ingresar al sitio");
+      }
+    }
+  </script>
+-->
+
+  <h1>Actividad Control TEXTAREA</h1>
+  <h3>Actividad 1</h3>
+  <!--
+   <p>Ingresa tus datos y comentarios:</p>
+  <input id="nombre" type="text" placeholder="Ingresa tu nombre" />
+  <input id="email" type="email" placeholder="Ingresa tu email" />
+  <textarea id="comentarios"></textarea>
+  <br />
+  <button onclick="mostrarDatos()">Mostrar datos</button>
+  <script>
+    function mostrarDatos() {
+      var nombre = document.getElementById("nombre").value;
+      var email = document.getElementById("email").value;
+      var comentarios = document.getElementById("comentarios").value;
+      alert(
+        "Nombre: " +
+          nombre +
+          "\nEmail: " +
+          email +
+          "\nComentarios: " +
+          comentarios
+      );
+    }
+  </script>
+-->
+  <h1>Actividad Evento onFocus onBlur</h1>
+  <h3>Actividad 1</h3>
+<!--
+  <h1>Ingresa tu nombre y tu clave</h1>
+  <p>Nombre:</p>
+  <input id="nombre" type="text" placeholder="Ingresa tu nombre" />
+  <p>Clave:</p>
+  <input
+    id="clave"
+    type="password"
+    placeholder="Ingresa tu clave"
+    onblur="validarClave()"
+  />
+  <script>
+    function validarClave() {
+      var clave = document.getElementById("clave").value;
+      var longitud = clave.length;
+      if (longitud < 7 || longitud > 20) {
+        alert("La clave debe tener entre 7 y 20 caracteres");
+      }
+    }
+  </script>
+-->
+<h1>Actividad Evento onMouseOver onMouse Out</h1>
+  <h3>Actividad 1</h3>
+  
+  
 </body>
